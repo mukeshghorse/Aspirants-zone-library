@@ -7,13 +7,38 @@ public class StudentDetailsResponseDto {
     private String dateOfBirth;
     private String fatherName;
     private String email;
-    private String password;
     private String phoneNumber;
     private String highestQualification;
     private String aadhaarNumber;
     private String aadhaarImage;
+    private String profilePicture;
+    private String registrationDate;
 
-    // Getters and Setters
+    public String getRegistrationDate() {
+        return registrationDate;
+    }
+
+    public void setRegistrationDate(String registrationDate) {
+        this.registrationDate = registrationDate;
+    }
+
+    public String getProfilePicture() {
+        return profilePicture;
+    }
+
+    public StudentDetailsResponseDto(String firstName) {
+        this.firstName = firstName;
+    }
+
+
+    public void setProfilePicture(String profilePicture) {
+        this.profilePicture = profilePicture;
+    }
+
+    public StudentDetailsResponseDto() {
+    }
+
+
     public String getFirstName() {
         return firstName;
     }
@@ -62,13 +87,7 @@ public class StudentDetailsResponseDto {
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
-    }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
 
     public String getPhoneNumber() {
         return phoneNumber;

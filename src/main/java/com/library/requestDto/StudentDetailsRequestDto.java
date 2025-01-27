@@ -1,5 +1,7 @@
 package com.library.requestDto;
 
+import java.util.Date;
+
 public class StudentDetailsRequestDto {
     private String firstName;
     private String lastName;
@@ -12,6 +14,19 @@ public class StudentDetailsRequestDto {
     private String highestQualification;
     private String aadhaarNumber;
     private String aadhaarImage;
+    private String registrationDate;
+
+    public String getRegistrationDate() {
+        return registrationDate;
+    }
+
+    public void setRegistrationDate(String registrationDate) {
+        this.registrationDate = registrationDate;
+    }
+
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
 
     // Getters and Setters
     public String getFirstName() {
@@ -42,9 +57,7 @@ public class StudentDetailsRequestDto {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
-    }
+
 
     public String getFatherName() {
         return fatherName;
