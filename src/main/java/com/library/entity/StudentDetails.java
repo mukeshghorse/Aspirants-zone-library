@@ -37,7 +37,7 @@ public class StudentDetails extends Student {
     private String aadhaarNumber;
 
     @Column(nullable = false)
-    private Date registrationDate;
+    private String registrationDate;
 
     private String aadhaarImage;
 
@@ -49,7 +49,7 @@ public class StudentDetails extends Student {
 
     public StudentDetails(String firstName, String lastName, String address, String dateOfBirth, String fatherName,
                           String email, String password, String phoneNumber, String highestQualification,
-                          String aadhaarNumber, Date registrationDate, String aadhaarImage, String profilePicture) {
+                          String aadhaarNumber, String registrationDate, String aadhaarImage, String profilePicture) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -146,11 +146,11 @@ public class StudentDetails extends Student {
         this.aadhaarNumber = aadhaarNumber;
     }
 
-    public Date getRegistrationDate() {
+    public String getRegistrationDate() {
         return registrationDate;
     }
 
-    public void setRegistrationDate(Date registrationDate) {
+    public void setRegistrationDate(String registrationDate) {
         this.registrationDate = registrationDate;
     }
 
