@@ -12,13 +12,13 @@ public class Student {
     private Long studentId;
 
     @Column(nullable = false)
-    private Boolean isActive;
+    private Boolean isActive=true;
 
-    @Temporal(TemporalType.TIMESTAMP) // Specify the time precision for dates
-    @Column(nullable = false, updatable = false) // Created date should not be updated
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(nullable = false, updatable = false)
     private Date createdOn;
 
-    @Temporal(TemporalType.TIMESTAMP) // Specify the time precision for dates
+    @Temporal(TemporalType.TIMESTAMP)
     @Column(nullable = false)
     private Date updatedOn;
 
